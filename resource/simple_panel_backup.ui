@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>two_button</class>
+ <widget class="QWidget" name="two_button">
+
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>5000</height>
+   </rect>
+  </property>
+
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>101</width>
+     <height>350</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_1">
+      <property name="text">
+       <string>Load map</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Cropping</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Set initial position</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+    <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Setup input</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>106</width>
+     <height>350</height>
+    </rect>
+   </property>
+
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_1">
+      <property name="text">
+       <string>MAP</string>
+      </property>
+     </widget>
+    </item>
+    
+    <item>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>SET</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="text">
+       <string>SAVE</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>CROP</string>
+      </property>
+     </widget>
+    </item>
+    
+    <item>
+     <widget class="QPushButton" name="pushButton_posX">
+      <property name="text">
+       <string>+X</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_negX">
+      <property name="text">
+       <string>-X</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton_posY">
+      <property name="text">
+       <string>+Y</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton_negY">
+      <property name="text">
+       <string>-Y</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton_posZ">
+      <property name="text">
+       <string>+Z</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_negZ">
+      <property name="text">
+       <string>-Z</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton_CCW">
+      <property name="text">
+       <string>R_CCW</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton_CW">
+      <property name="text">
+       <string>R_CW</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton_RUN">
+      <property name="text">
+       <string>RUN</string>
+      </property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+
+ 
+
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,15 @@
+<library path="lib/libsimple_panel">
+
+  <class type="rviz_panel::simplePanel" base_class_type="rviz::Panel">
+    <description>
+      A simple panel widget with two buttons.
+      test
+    </description>
+  </class>
+  <class type="rviz_panel::test_Panel" base_class_type="rviz::Panel">
+    <description>
+      A simple panel widget with three buttons.
+      test
+    </description>
+  </class>
+</library>
