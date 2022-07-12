@@ -80,7 +80,7 @@ namespace rviz_panel
             std_msgs::Bool msg_;
     };
 
-    class test_Panel : public rviz::Panel
+    class ml_matching_panel : public rviz::Panel
     {
         /**
          * This class uses Qt slots and is a subclass of QObject, so it needs
@@ -101,7 +101,7 @@ namespace rviz_panel
              *  someone using the class for something else to pass in a parent
              *  widget as they normally would with Qt.
              */
-            test_Panel(QWidget * parent = 0);
+            ml_matching_panel(QWidget * parent = 0);
 
             /**
              *  Now we declare overrides of rviz::Panel functions for saving and
@@ -144,8 +144,6 @@ namespace rviz_panel
             // ROS declaration
             ros::NodeHandle nh_;
             ros::Publisher button_1_pub_;
-            ros::Publisher button_2_pub_;
-            ros::Publisher button_3_pub_;
             std_msgs::Int64 msg_;
     };
 } // namespace rviz_panel

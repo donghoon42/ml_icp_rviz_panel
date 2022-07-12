@@ -6,10 +6,9 @@
       test
     </description>
   </class>
-  <class type="rviz_panel::test_Panel" base_class_type="rviz::Panel">
+  <class type="rviz_panel::ml_matching_panel" base_class_type="rviz::Panel">
     <description>
-      A simple panel widget with three buttons.
-      test
+      A simple panel widget for ml_matching
     </description>
   </class>
 </library>

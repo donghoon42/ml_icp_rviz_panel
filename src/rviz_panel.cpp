@@ -4,7 +4,7 @@
 
 PLUGINLIB_EXPORT_CLASS(rviz_panel::simplePanel, rviz::Panel)
 
-PLUGINLIB_EXPORT_CLASS(rviz_panel::test_Panel, rviz::Panel)
+PLUGINLIB_EXPORT_CLASS(rviz_panel::ml_matching_panel, rviz::Panel)
 
 namespace rviz_panel
 {
@@ -60,7 +60,7 @@ namespace rviz_panel
     }
 
 
-    test_Panel::test_Panel(QWidget * parent)
+    ml_matching_panel::ml_matching_panel(QWidget * parent)
     :   rviz::Panel(parent),
         ui_(std::make_shared<Ui::two_button>())
     {
@@ -90,25 +90,25 @@ namespace rviz_panel
     }
 
 
-    void test_Panel::button_one()
+    void ml_matching_panel::button_one()
     {
         msg_.data = 114;
         ROS_INFO_STREAM("Button one pressed. "<< msg_.data);
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_two()
+    void ml_matching_panel::button_two()
     {
         msg_.data = 99;
         ROS_INFO_STREAM("Button two pressed.");
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_three()
+    void ml_matching_panel::button_three()
     {
         msg_.data = 32;
         ROS_INFO_STREAM("Button three pressed.");
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_four()
+    void ml_matching_panel::button_four()
     {
         msg_.data = 103;
         ROS_INFO_STREAM("Button four pressed.");
@@ -116,47 +116,47 @@ namespace rviz_panel
     }
 
 
-    void test_Panel::button_posX()
+    void ml_matching_panel::button_posX()
     {
         msg_.data = 119;
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_negX()
+    void ml_matching_panel::button_negX()
     {
         msg_.data = 115;
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_posY()
+    void ml_matching_panel::button_posY()
     {
         msg_.data = 97;
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_negY()
+    void ml_matching_panel::button_negY()
     {
         msg_.data = 100;
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_posZ()
+    void ml_matching_panel::button_posZ()
     {
         msg_.data = 113;
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_negZ()
+    void ml_matching_panel::button_negZ()
     {
         msg_.data = 101;
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_CCW()
+    void ml_matching_panel::button_CCW()
     {
         msg_.data = 122;
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_CW()
+    void ml_matching_panel::button_CW()
     {
         msg_.data = 120;
         this->button_1_pub_.publish(this->msg_);
     }
-    void test_Panel::button_RUN()
+    void ml_matching_panel::button_RUN()
     {
         msg_.data = 105;
         this->button_1_pub_.publish(this->msg_);
@@ -166,7 +166,7 @@ namespace rviz_panel
      *  Config object. It is important here that you call save()
      *  on the parent class so the class id and panel name get saved.
      */
-    void test_Panel::save(rviz::Config config) const
+    void ml_matching_panel::save(rviz::Config config) const
     {
         rviz::Panel::save(config);
     }
@@ -174,7 +174,7 @@ namespace rviz_panel
     /**
      *  Load all configuration data for this panel from the given Config object.
      */
-    void test_Panel::load(const rviz::Config & config)
+    void ml_matching_panel::load(const rviz::Config & config)
     {
         rviz::Panel::load(config);
     }
